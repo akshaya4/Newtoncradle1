@@ -3,7 +3,7 @@ class Bob
 	constructor(x,y,r)
 	{
 		var options={
-			isStatic:true,
+			isStatic:false,
 			restitution:1.5,
 			friction:0.0,
 			density:0.2
@@ -25,7 +25,7 @@ class Bob
 			push()
 			translate(paperpos.x, paperpos.y);
 			rectMode(CENTER)
-			strokeWeight(2);
+			//strokeWeight(2);
 			fill(255,0,255)
 			ellipse(0,0,this.r, this.r);
 			pop()
